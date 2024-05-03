@@ -39,7 +39,7 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
     }
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF272D34),
+        backgroundColor:  Color.fromARGB(255, 128, 124, 190),
         title: const Text('Login'),
       ),
       body: Container(
@@ -48,9 +48,9 @@ class _CheckPrivateKeyState extends State<CheckPrivateKey> {
         child: Column(
           children: [
             SvgPicture.asset(
-              'assets/auth.svg',
-              height: 280.0,
-              width: 520.0,
+              'assets/auth_.svg',
+              height: 380.0,
+              width: 620.0,
               allowDrawingOutsideViewBox: true,
             ),
             // Image.asset(

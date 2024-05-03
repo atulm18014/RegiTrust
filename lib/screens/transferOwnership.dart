@@ -310,7 +310,7 @@ class _transferOwnershipState extends State<transferOwnership> {
       appBar: AppBar(
         title: const Text("Transfer Ownership"),
         centerTitle: true,
-        backgroundColor: const Color(0xFF272D34),
+        backgroundColor: Color.fromARGB(255, 128, 124, 190),
       ),
       body: isLoading
           ? const Center(
@@ -381,10 +381,7 @@ class _transferOwnershipState extends State<transferOwnership> {
                       onPressed: () {
                         launchUrl(docUrl);
                       },
-                      child: const Text(
-                        'View Document',
-                        style: TextStyle(color: Colors.blue),
-                      ),
+                      
                     ),
                   const SizedBox(
                     height: 8,

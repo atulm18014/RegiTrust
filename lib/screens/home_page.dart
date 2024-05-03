@@ -25,7 +25,7 @@ class _home_pageState extends State<home_page> {
           children: <Widget>[
             // Top Header
             const Material(
-              color: Color(0xC98A0C32),
+              color:  Color.fromARGB(255, 128, 124, 190),
               elevation: 10,
               child: Padding(
                 padding: EdgeInsets.only(
@@ -43,7 +43,7 @@ class _home_pageState extends State<home_page> {
                   Center(
                     child: Container(
                       width: 600,
-                      height: 804,
+                      height: 734,
                       child: SvgPicture.asset(
                         'assets/background_svg.svg',
                         height: 20.0,
@@ -56,56 +56,12 @@ class _home_pageState extends State<home_page> {
               ),
             ),
             const SizedBox(
-              height: 100,
+              height: 50,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CustomAnimatedContainer('Admin', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "owner",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "owner",
-                  );
-                }),
-                CustomAnimatedContainer('Land ', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "LandInspector",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "LandInspector",
-                  );
-                }),
-                CustomAnimatedContainer('User', () {
-                  // Navigator.push(
-                  //     context,
-                  //     MaterialPageRoute(
-                  //         builder: (context) => const CheckPrivateKey(
-                  //               val: "UserLogin",
-                  //             )));
-                  Navigator.of(context).pushNamed(
-                    '/login',
-                    arguments: "UserLogin",
-                  );
-                }),
-              ],
-            ),
-            const SizedBox(
-              height: 100,
-            ),
-
+            
             
             Container(
-                color: const Color(0xF17A0C2D), // Background color
+                color:  Color.fromARGB(255, 128, 124, 190), // Background color
                padding: const EdgeInsets.all(20.0), // Add padding for the footer content
                child: const Row(
                  mainAxisAlignment: MainAxisAlignment.center, // Center the content horizontally
@@ -115,6 +71,7 @@ class _home_pageState extends State<home_page> {
         style: TextStyle(
           color: Colors.white, // Text color
           fontSize: 10.0,
+
         ),
       ),
     ],

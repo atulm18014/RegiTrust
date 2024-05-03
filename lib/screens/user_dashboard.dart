@@ -342,7 +342,7 @@ Future<bool> uploadDocument() async {
       key: _scaffoldKey,
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: const Color(0xFF272D34),
+        backgroundColor: Color.fromARGB(255, 128, 124, 190),
         leading: isDesktop
             ? Container()
             : GestureDetector(
@@ -360,7 +360,7 @@ Future<bool> uploadDocument() async {
         title: const Text('User Dashboard'),
       ),
       drawer: drawer2(),
-      drawerScrimColor: Colors.transparent,
+      drawerScrimColor: Color.fromARGB(223, 133, 23, 74),
       body: Row(
         children: [
           isDesktop ? drawer2() : Container(),
@@ -458,7 +458,7 @@ Widget sentRequest() {
         return Container(
           height: 60,
           decoration: const BoxDecoration(
-            border: Border(bottom: BorderSide(color: Colors.grey, width: 1)),
+            border: Border(bottom: BorderSide(color: Color.fromARGB(255, 158, 49, 125), width: 1)),
           ),
           child: Row(
             children: [
@@ -593,7 +593,7 @@ Widget sentRequest() {
         return Container(
           height: 60,
           decoration: const BoxDecoration(
-            border: Border(bottom: BorderSide(color: Colors.grey, width: 1)),
+            border: Border(bottom: BorderSide(color: Color.fromARGB(255, 128, 124, 190), width: 2)),
           ),
           child: Row(
             children: [
@@ -643,7 +643,7 @@ Widget sentRequest() {
                   child: Center(
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            foregroundColor: Colors.greenAccent),
+                            foregroundColor: const Color.fromARGB(255, 105, 186, 240)),
                         onPressed: data[4].toString() != '0'
                             ? null
                             : () async {
@@ -983,7 +983,7 @@ Widget sentRequest() {
               Padding(
                 padding: const EdgeInsets.all(10),
                 child: MaterialButton(
-                  color: Colors.grey,
+                  color: Color.fromARGB(255, 156, 66, 93),
                   onPressed: () async {
                     allLatiLongi = await Navigator.push(
                         context,
@@ -1003,7 +1003,7 @@ Widget sentRequest() {
                 child: Row(
                   children: [
                     MaterialButton(
-                      color: Colors.grey,
+                      color:Color.fromARGB(255, 80, 89, 141),
                       onPressed: pickDocument,
                       child: const Text('Upload Document'),
                     ),
@@ -1056,7 +1056,7 @@ Widget sentRequest() {
                               print(e);
                               showToast("Something Went Wrong",
                                   context: context,
-                                  backgroundColor: Colors.red);
+                                  backgroundColor: const Color.fromARGB(255, 238, 63, 50));
                             }
 
                             setState(() {
@@ -1068,7 +1068,7 @@ Widget sentRequest() {
                         }),
               if (!isUserVerified)
                 const Text('You are not verified',
-                    style: TextStyle(color: Colors.redAccent)),
+                    style: TextStyle(color: Color.fromARGB(255, 230, 55, 55))),
               isLoading ? spinkitLoader : Container()
             ],
           ),
@@ -1118,7 +1118,7 @@ Widget sentRequest() {
                       'Not Yet Verified',
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.blueAccent),
+                          color: Color.fromARGB(255, 248, 52, 52)),
                     ),
               CustomTextFiled(userInfo[0].toString(), 'Wallet Address'),
               CustomTextFiled(userInfo[1].toString(), 'Name'),
@@ -1132,7 +1132,7 @@ Widget sentRequest() {
                 },
                 child: const Text(
                   '  View Document',
-                  style: TextStyle(color: Colors.blue),
+                  style: TextStyle(color: Color.fromARGB(255, 170, 18, 81)),
                 ),
               ),
               CustomTextFiled(userInfo[7].toString(), 'Mail'),
@@ -1147,9 +1147,9 @@ Widget sentRequest() {
     return Container(
       decoration: const BoxDecoration(
         boxShadow: [
-          BoxShadow(blurRadius: 10, color: Colors.black26, spreadRadius: 2)
+          BoxShadow(blurRadius: 10, color: Color.fromARGB(209, 255, 255, 255), spreadRadius: 3)
         ],
-        color: Color(0xFF272D34),
+        color: Color.fromARGB(171, 128, 124, 190),
       ),
       width: 250,
       child: Column(
@@ -1168,7 +1168,7 @@ Widget sentRequest() {
           ),
           Text(name,
               style: const TextStyle(
-                  color: Colors.white70,
+                  color: Color.fromARGB(209, 238, 233, 233),
                   fontSize: 18,
                   fontWeight: FontWeight.bold)),
           const SizedBox(
@@ -1225,7 +1225,7 @@ Widget sentRequest() {
         barrierDismissible: false,
         builder: (BuildContext context) {
           return Dialog(
-              backgroundColor: Colors.white,
+              backgroundColor: const Color.fromARGB(255, 19, 18, 18),
               child: Container(
                 margin: const EdgeInsets.all(10),
                 height: 430.0,

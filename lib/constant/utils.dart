@@ -127,119 +127,119 @@ Widget CustomButton3(text, fun, color) => Container(
               text,
               style: TextStyle(
                 fontSize: 15,
-                color: color == Colors.white ? Colors.black : Colors.white,
+                color: color == Color.fromARGB(255, 255, 255, 255) ? const Color.fromARGB(255, 255, 249, 249) : const Color.fromARGB(255, 71, 23, 23),
               ),
             ),
           ),
         ),
       ),
     );
-Widget CustomAnimatedContainer(text, fun) => Padding(
-      padding: const EdgeInsets.all(10.0),
-      child: HoverCrossFadeWidget(
-        firstChild: Container(
-          height: 270,
-          width: 250,
-          decoration: BoxDecoration(
-              color:  Color.fromARGB(223, 211, 24, 80),
-              border: Border.all(color: Colors.black54, width: 2),
-              borderRadius: const BorderRadius.all(Radius.circular(13))),
-          child: Center(
-              child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              if (text == 'Contract Owner')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/contract_owner_icon.jpg',
-                    width: 110.0,
-                    height: 110.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              if (text == 'Land Inspector')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/land_ins_icon.jpg',
-                    width: 110.0,
-                    height: 110.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              if (text == 'User')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/user_icon.png',
-                    width: 110.0,
-                    height: 110.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              Text(
-                text,
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
-              ),
-              CustomButton2('Continue', fun)
-            ],
-          )),
-        ),
-        duration: const Duration(milliseconds: 100),
-        secondChild: Container(
-          height: 270,
-          width: 250,
-          decoration: BoxDecoration(
-              color: Colors.white,
-              border: Border.all(color: Colors.blue, width: 2),
-              borderRadius: const BorderRadius.all(Radius.circular(20))),
-          child: Center(
-              child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              if (text == 'Contract Owner')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/contract_owner_icon.jpg',
-                    width: 110.0,
-                    height: 110.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              if (text == 'Land Inspector')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/land_ins_icon.jpg',
-                    width: 110.0,
-                    height: 110.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              if (text == 'User')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/user_icon.png',
-                    width: 110.0,
-                    height: 110.0,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              Text(
-                text,
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
-              ),
-              CustomButton2('Continue', fun)
-            ],
-          )),
-        ),
-      ),
-    );
+// Widget CustomAnimatedContainer(text, fun) => Padding(
+//       padding: const EdgeInsets.all(10.0),
+//       child: HoverCrossFadeWidget(
+//         firstChild: Container(
+//           height: 270,
+//           width: 250,
+//           decoration: BoxDecoration(
+//               color:  Color.fromARGB(223, 211, 24, 80),
+//               // border: Border.all(color: Colors.black54, width: 2),
+//               borderRadius: const BorderRadius.all(Radius.circular(13))),
+//           child: Center(
+//               child: Column(
+//             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//             children: [
+//               if (text == 'Contract Owner')
+//                 ClipRRect(
+//                   borderRadius: BorderRadius.circular(8.0),
+//                   child: Image.asset(
+//                     'assets/contract_owner_icon.jpg',
+//                     width: 110.0,
+//                     height: 110.0,
+//                     fit: BoxFit.fill,
+//                   ),
+//                 ),
+//               if (text == 'Land Inspector')
+//                 ClipRRect(
+//                   borderRadius: BorderRadius.circular(8.0),
+//                   child: Image.asset(
+//                     'assets/land_ins_icon.jpg',
+//                     width: 110.0,
+//                     height: 110.0,
+//                     fit: BoxFit.fill,
+//                   ),
+//                 ),
+//               if (text == 'User')
+//                 ClipRRect(
+//                   borderRadius: BorderRadius.circular(8.0),
+//                   child: Image.asset(
+//                     'assets/user_icon.png',
+//                     width: 110.0,
+//                     height: 110.0,
+//                     fit: BoxFit.fill,
+//                   ),
+//                 ),
+//               Text(
+//                 text,
+//                 style:
+//                     const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+//               ),
+//               CustomButton2('Continue', fun)
+//             ],
+//           )),
+//         ),
+    //     duration: const Duration(milliseconds: 100),
+    //     secondChild: Container(
+    //       height: 270,
+    //       width: 250,
+    //       decoration: BoxDecoration(
+    //           color: Colors.white,
+    //           border: Border.all(color: Colors.blue, width: 2),
+    //           borderRadius: const BorderRadius.all(Radius.circular(20))),
+    //       child: Center(
+    //           child: Column(
+    //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    //         children: [
+    //           if (text == 'Contract Owner')
+    //             ClipRRect(
+    //               borderRadius: BorderRadius.circular(8.0),
+    //               child: Image.asset(
+    //                 'assets/contract_owner_icon.jpg',
+    //                 width: 110.0,
+    //                 height: 110.0,
+    //                 fit: BoxFit.fill,
+    //               ),
+    //             ),
+    //           if (text == 'Land Inspector')
+    //             ClipRRect(
+    //               borderRadius: BorderRadius.circular(8.0),
+    //               child: Image.asset(
+    //                 'assets/land_ins_icon.jpg',
+    //                 width: 110.0,
+    //                 height: 110.0,
+    //                 fit: BoxFit.fill,
+    //               ),
+    //             ),
+    //           if (text == 'User')
+    //             ClipRRect(
+    //               borderRadius: BorderRadius.circular(8.0),
+    //               child: Image.asset(
+    //                 'assets/user_icon.png',
+    //                 width: 110.0,
+    //                 height: 110.0,
+    //                 fit: BoxFit.fill,
+    //               ),
+    //             ),
+    //           Text(
+    //             text,
+    //             style:
+    //                 const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+    //           ),
+    //           CustomButton2('Continue', fun)
+    //         ],
+    //       )),
+    //     ),
+    //   ),
+    // );
 
 Widget CustomTextFiled(text, label) => Padding(
       padding: const EdgeInsets.all(10),
@@ -255,7 +255,7 @@ Widget CustomTextFiled(text, label) => Padding(
             border: const OutlineInputBorder(),
             labelText: label,
             labelStyle: const TextStyle(fontSize: 20),
-            fillColor:  Color.fromARGB(255, 32, 46, 75),
+            fillColor:  Color.fromARGB(255, 245, 245, 245),
             filled: true),
       ),
     );

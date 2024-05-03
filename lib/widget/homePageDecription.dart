@@ -23,7 +23,7 @@ class LeftDescription extends StatelessWidget {
           child: Text('''RegiTrust''',
               style: TextStyle(
                 fontFamily: 'Raleway',
-                color: Color.fromARGB(255, 32, 46, 75),
+                color:  Color.fromARGB(255, 128, 124, 190),
                 fontSize: 100,
                 fontWeight: FontWeight.w800,
                 fontStyle: FontStyle.normal,
@@ -96,13 +96,13 @@ transactions related  to land ownership.''',
                         )),
                   ),
                   decoration: BoxDecoration(
-                      color: const Color(0xF17A0C2D),
+                      color: Color.fromARGB(255, 128, 124, 190),
                       borderRadius: BorderRadius.circular(15))),
             ),
           ],
         ),
         const SizedBox(
-          height: 100,
+          height: 30,
         )
       ],
     );

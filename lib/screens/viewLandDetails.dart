@@ -29,7 +29,7 @@ class _viewLandDetailsState extends State<viewLandDetails> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF272D34),
+        backgroundColor: Color.fromARGB(255, 128, 124, 190),
         title: const Text('Land Details'),
       ),
       body: SingleChildScrollView(
