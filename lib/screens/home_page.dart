@@ -43,7 +43,7 @@ class _home_pageState extends State<home_page> {
                   Center(
                     child: Container(
                       width: 600,
-                      height: 734,
+                      height: 740,
                       child: SvgPicture.asset(
                         'assets/background_svg.svg',
                         height: 20.0,

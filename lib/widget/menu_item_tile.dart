@@ -39,7 +39,7 @@ class _MenuItemTileState extends State<MenuItemTile> {
           children: <Widget>[
             Icon(
               widget.icon,
-              color: widget.isSelected ? Color.fromARGB(255, 253, 253, 253) : Colors.white30,
+              color: widget.isSelected ? Color.fromARGB(255, 132, 124, 177) :  Color.fromARGB(255, 128, 124, 190),
               size: 38,
             ),
             const SizedBox(width: 0),
@@ -50,7 +50,7 @@ class _MenuItemTileState extends State<MenuItemTile> {
                         fontSize: 18,
                         fontWeight: FontWeight.bold)
                     : const TextStyle(
-                        color: Color.fromARGB(179, 255, 255, 255),
+                        color: Color.fromARGB(255, 128, 124, 190),
                         fontSize: 18,
                         fontWeight: FontWeight.bold)),
           ],

@@ -8,6 +8,6 @@ const String rpcUrl =
       "http://127.0.0.1:7545";
     //"https://rpc-mumbai.maticvigil.com/v1/a5be973518c173bacd9be16a6314dd08b6abcd23";
 
-const String contractAddress = "0xcDB461Af6D5FF1e81243f21310951F7A0277314E";
+const String contractAddress = "0xD020CFD55865660ebEfC62446258744E3757de88r";
 
 const int chainId = 1337; //Polygon testnet-80001, local ganache-1337

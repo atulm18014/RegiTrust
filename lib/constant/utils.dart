@@ -84,7 +84,7 @@ Widget CustomButton(text, fun) => Container(
               text,
               style: const TextStyle(
                 fontSize: 18,
-                color: Colors.white,
+                color: Color.fromARGB(255, 128, 124, 190),
               ),
             ),
           ),
@@ -105,7 +105,7 @@ Widget CustomButton2(text, fun) => Container(
               text,
               style: const TextStyle(
                 fontSize: 15,
-                color: Colors.white,
+                color: Color.fromARGB(171, 128, 124, 190),
               ),
             ),
           ),
@@ -127,7 +127,7 @@ Widget CustomButton3(text, fun, color) => Container(
               text,
               style: TextStyle(
                 fontSize: 15,
-                color: color == Color.fromARGB(255, 255, 255, 255) ? const Color.fromARGB(255, 255, 249, 249) : const Color.fromARGB(255, 71, 23, 23),
+                color: color == Color.fromARGB(171, 128, 124, 190)? Color.fromARGB(255, 128, 124, 190) :  Color.fromARGB(255, 128, 124, 190),
               ),
             ),
           ),
