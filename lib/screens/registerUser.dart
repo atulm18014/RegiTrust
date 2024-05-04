@@ -151,7 +151,7 @@ class _RegisterUserState extends State<RegisterUser> {
     var model2 = Provider.of<MetaMaskProvider>(context);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF272D34),
+        backgroundColor: Color.fromARGB(255, 128, 124, 190),
         elevation: 0,
         centerTitle: true,
         title: const Text(
@@ -298,13 +298,15 @@ class _RegisterUserState extends State<RegisterUser> {
                   Padding(
                     padding: const EdgeInsets.all(10),
                     child: TextFormField(
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter Pan Number';
-                        } else if (value.length != 10)
-                          return 'Please enter Valid Adhar number';
-                        return null;
+                       validator: (value) {
+                        RegExp regex = RegExp(
+                            '[A-Z]{5}[0-9]{4}[A-Z]');
+                        if (!regex.hasMatch(value!) || value == null)
+                          return 'Enter a valid PAN address';
+                        else
+                          return null;
                       },
+                        
                       style: const TextStyle(
                         fontSize: 15,
                       ),
@@ -328,7 +330,7 @@ class _RegisterUserState extends State<RegisterUser> {
                     child: Row(
                       children: [
                         MaterialButton(
-                          color: Colors.grey,
+                          color: Color.fromARGB(255, 128, 124, 190),
                           onPressed: pickDocument,
                           child: const Text('Upload Document'),
                         ),

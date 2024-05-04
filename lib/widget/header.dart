@@ -17,6 +17,11 @@ class HeaderWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
+    //      Image.asset(
+    //   './assets/GSlogo-removebg-preview.png', // Replace with your actual image asset path
+    //   width: 10, // Set the desired width
+    //   height: 10, // Set the desired height
+    // ),
         // logo
         const Text(
           'RegiTrust',

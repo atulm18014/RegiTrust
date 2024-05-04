@@ -60,7 +60,7 @@ class _landOnMapState extends State<landOnMap> {
                                 mapController.animateCamera(
                                     CameraUpdate.newCameraPosition(
                                         CameraPosition(
-                                  zoom: 15.0,
+                                  zoom:8.0,
                                   target: initialPos,
                                 )));
                                 setState(() {});
@@ -171,7 +171,7 @@ class _landOnMapState extends State<landOnMap> {
                         : "mapbox://styles/saurabhmw/ckyb6byh90rvy15pcc8bej1r7",
                     initialCameraPosition: CameraPosition(
                       zoom: 3.0,
-                      target: const LatLng(19.663280, 75.300293),
+                      target: const LatLng(28.7041, 77.1025),
                     ),
                     onMapCreated: (MapboxMapController controller) {
                       mapController = controller;

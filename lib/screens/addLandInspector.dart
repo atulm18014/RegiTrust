@@ -41,7 +41,7 @@ class _AddLandInspectorState extends State<AddLandInspector> {
       key: _scaffoldKey,
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: const Color(0xFF272D34),
+        backgroundColor:  Color.fromARGB(255, 128, 124, 190),
         leading: isDesktop
             ? Container()
             : GestureDetector(
@@ -61,7 +61,7 @@ class _AddLandInspectorState extends State<AddLandInspector> {
         ),
       ),
       drawer: drawer2(),
-      drawerScrimColor: Colors.transparent,
+      drawerScrimColor:  Color.fromARGB(171, 128, 124, 190),
       body: Row(
         children: [
           isDesktop ? drawer2() : Container(),
@@ -438,7 +438,7 @@ class _AddLandInspectorState extends State<AddLandInspector> {
         boxShadow: [
           BoxShadow(blurRadius: 10, color: Colors.black26, spreadRadius: 2)
         ],
-        color: Color(0xFF272D34),
+        color:  Color.fromARGB(171, 128, 124, 190),
       ),
       width: 260,
       child: Column(
@@ -446,14 +446,14 @@ class _AddLandInspectorState extends State<AddLandInspector> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           const SizedBox(
-            width: 20,
+            width: 25,
           ),
           const Icon(
             Icons.person,
             size: 50,
           ),
           const SizedBox(
-            width: 30,
+            width: 35,
           ),
           const Text('Contract Owner',
               style: TextStyle(
