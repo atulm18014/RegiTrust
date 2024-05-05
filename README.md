@@ -34,7 +34,7 @@ To install the project, follow these steps:
 1. Clone the repository to your local machine.
 2. Ensure that Flutter and Dart are installed on your system.
 3. Install truffle via npm `npm install -g truffle`.
-4. Setup [Alchemy](https://www.alchemy.com/) and project in Polygon Amoy network.
+4. Setup account on [Alchemy](https://www.alchemy.com/) and project on the Polygon Amoy Testnet.
 5. Refer to Amoy api and documentation on alchemy and make changes to `truffle-config.js` and other source file accordingly.
 6. Run:
 ```
