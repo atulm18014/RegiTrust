@@ -42,7 +42,7 @@ truffle init
 truffle compile
 truffle migrate --reset
 ```
-7. Copy the contract address as shown below and paste in contract address variavle in `lib\constant\constants.dart`
+7. Copy the contract address as shown below and paste in contract address variable in `lib\constant\constants.dart`
 <img src="screenshot/0.png" height="225">
 
 8. Install any dependencies using `flutter pub get`.
@@ -65,7 +65,7 @@ truffle init
 truffle compile
 truffle migrate --reset
 ```
-6. Copy the contract address as shown below and paste in contract address variavle in `lib\constant\constants.dart`
+6. Copy the contract address as shown below and paste in contract address variable in `lib\constant\constants.dart`
 <img src="screenshot/0.png" height="225">
 
 7. Install any dependencies using `flutter pub get`.
