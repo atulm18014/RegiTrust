@@ -49,7 +49,7 @@ truffle migrate --reset
 9. Run the project using ` flutter run -d web-server --web-port 5555`
 10. Ensure that Metamask is connect to the same network as the Application and add the required wallets.
 11. If need of funds for gas head to https://www.alchemy.com/faucets/polygon-amoy 
-1. Run the web interface on `http://localhost:6000`
+1. Run the web interface on `http://localhost:5555`
 
 
 ## Installation (Non Polygon)
@@ -71,7 +71,7 @@ truffle migrate --reset
 7. Install any dependencies using `flutter pub get`.
 8. Run the project using ` flutter run -d web-server --web-port 5555`
 9. Ensure that Metamask is connect to the same network as the Application and add the required wallets.
-10. Run the web interface on `http://localhost:6000`
+10. Run the web interface on `http://localhost:5555`
 
 
 ## Usage
