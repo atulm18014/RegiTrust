@@ -43,7 +43,7 @@ truffle compile
 truffle migrate --reset
 ```
 7. Copy the contract address as shown below and paste in contract address variavle in `lib\constant\constants.dart`
-![Contract Address]()
+![Contract Address](screenshots/0.png)
 
 8. Install any dependencies using `flutter pub get`.
 9. Run the project using ` flutter run -d web-server --web-port 5555`
@@ -106,3 +106,35 @@ Contributions to the project are welcome! To contribute:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Project Flowchart
+<img src="screenshots/flowchart.png" height="450">
+
+## Screenshots
+Home Page                   |                   Wallet connect/Login
+:---------------------------------:        |      :------------------------------:
+<img src="screenshot/Screenshot1.png" height="225">  |<img src="screenshots/Screenshot7.png" height="225">
+
+Contract Owner Dashboard               |                   User Registration
+:---------------------------------:        |      :------------------------------:
+<img src="screenshots/Screenshot10.png" height="225">  |<img src="screenshots/Screenshot12.png" height="225">
+
+Land Inspector Dashboard                   |                  User Verification 
+:---------------------------------:        |      :------------------------------:
+<img src="screenshots/Screenshot11.png" height="225">     |<img src="screenshots/Screenshot5.png" height="225">
+
+User Dashboard               |                  Adding land on Map    
+:---------------------------------:        |      :------------------------------:
+<img src="screenshots/Screenshot2.png" height="225">     |<img src="screenshots/Screenshot8.png" height="225">
+
+Land Gallery                |                   Land Details    
+:---------------------------------:        |      :------------------------------:
+<img src="screenshots/Screenshot3.png" height="225">     |<img src="screenshots/Screenshot9.png" height="225">
+
+Received Request           |                   Payment  
+:---------------------------------:        |      :------------------------------:
+<img src="screenshots/Screenshot6.png" height="225">     |<img src="screenshots/Screenshot4.png" height="225">
+
+Transfer ownership  |                Witness
+:---------------------------------:        |      :------------------------------:
+<img src="screenshots/Screenshot14.png" height="225">     |<img src="screenshots/Screenshot13.png" height="225">
