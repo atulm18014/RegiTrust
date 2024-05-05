@@ -108,7 +108,7 @@ Contributions to the project are welcome! To contribute:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Project Flowchart
-<img src="screenshot/flowchart.png" height="450">
+<img src="screenshot/fc.png" height="450">
 
 ## Screenshots
   Polygon Amoy Project      |          Home Page     
