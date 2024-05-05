@@ -143,3 +143,4 @@ Generated Document  |
 :---------------------------------:        |
 <img src="screenshot/doc.png" height="225">     |
 
+Note: Document Images are blacked out for privacy reasons.
